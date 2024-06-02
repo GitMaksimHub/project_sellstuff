@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link type="text/css" href="{% static 'main_app/css/main.css' %}" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <title>main</title>
+</head>
+<body>
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+{% for i in data%}
+<div class="container bootstrap snippets bootdey">
+    <div class="row margin-bottom-10">
+        <div class="col-md-4 col-sm-6">
+            <div class="servive-block servive-block-grey">
+                <i class="icon-2x color-light fa fa-bell-o"></i>
+                <h2 class="heading-md"><a href="{{ i.get_absolute_url }}">{{i.title}}</a></h2>
+                <p>{{i.description}}</p>
+            </div>
+        </div>
+        {% endfor %}
+</body>
+</html>
