@@ -8,3 +8,6 @@ urlpatterns = [
 # aaaaaaa YA TOJE
 # Ya dead inside (aaaaa) hui
 # ZALUPA
+# Анекдот:
+# -Привет, дурак
+# -Сам ты привет
