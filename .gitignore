@@ -1,4 +1,3 @@
 backend/venv_project_front
 backend/sellstuff/db.sqlite3
 backend/backend_venv
-backend/sellstuff/main_app/migrations
