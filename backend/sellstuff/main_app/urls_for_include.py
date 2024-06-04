@@ -6,3 +6,4 @@ urlpatterns = [
 ]
 # AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA YA USTAL
 # aaaaaaa YA TOJE
+# Ya dead inside (aaaaa) hui
