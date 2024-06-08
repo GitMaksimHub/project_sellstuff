@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 // checked
 // izmeneniya
+// branch frontend
 function App() {
   const [details, setDetails] = useState([]);
 
