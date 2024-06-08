@@ -1,5 +1,6 @@
 backend/venv_project_front
 backend/sellstuff/db.sqlite3
+project_sellstuff/backend/sellstuff/db.sqlite3
 backend/backend_venv
 backend/sellsuff/manage.py
 .idea/project_sellstuff.iml
