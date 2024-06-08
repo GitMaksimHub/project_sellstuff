@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 // checked
 // izmeneniya
+// branch frontend
+// another commit
 function App() {
   const [details, setDetails] = useState([]);
 
