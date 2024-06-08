@@ -7,7 +7,7 @@ from django.urls import reverse
 #python manage.py migrate
 
 
-
+#comment dlya Ilii
 
 class db_test(models.Model):
     slug = models.SlugField(max_length=255, unique=True, db_index=True)
