@@ -4,10 +4,3 @@ urlpatterns = [
     path('', views.main, name="main"),
     path('test_path/<slug:slug_id>', views.test_path, name="test_path"),
 ]
-# AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA YA USTAL
-# aaaaaaa YA TOJE
-# Ya dead inside (aaaaa) hui
-# ZALUPA
-# Анекдот:
-# -Привет, дурак
-# -Сам ты привет

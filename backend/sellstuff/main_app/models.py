@@ -6,10 +6,6 @@ from django.urls import reverse
 #python manage.py sqlmigrate main_app 0001
 #python manage.py migrate
 
-
-#comment dlya Ilii
-# ещё один коммент после пуша с ветки бэк
-
 class db_test(models.Model):
     slug = models.SlugField(max_length=255, unique=True, db_index=True)
     title = models.CharField(max_length=255)
