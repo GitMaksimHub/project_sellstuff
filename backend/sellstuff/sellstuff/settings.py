@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-#e3ud9%_dl7pk#i3sl^z-y)9l*helr!pt(!2lz9c0c3bxurafi
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -53,6 +53,34 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
 ]
+url = "https://nominally-moral-ladybird.ngrok-free.app"
+CORS_ORIGIN_WHITELIST = [
+       "http://localhost:3000",  # Добавьте адрес вашего React приложения
+       url,  # Добавьте адрес вашего NGROK
+   ]
+CORS_ALLOW_METHODS = [
+       'GET',
+       'POST',
+       'PUT',
+       'PATCH',
+       'DELETE',
+   ]
+
+CORS_ALLOW_HEADERS = [
+       'accept',
+       'accept-encoding',
+       'authorization',
+       'content-type',
+       'dnt',
+       'origin',
+       'user-agent',
+       'x-csrftoken',
+       'x-requested-with',
+       'ngrok-skip-browser-warning',  # Добавьте заголовок NGROK
+       'access-control-allow-origin',
+       'access-control-allow-methods',
+       'access-control-allow-headers'
+   ]
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [

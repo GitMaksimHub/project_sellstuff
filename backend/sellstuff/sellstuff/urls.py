@@ -17,8 +17,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from main_app.views import *
+from rest_framework import routers
+
+router = routers.SimpleRouter()
+router.register(r'test_api', db_api_view_viewset)
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('main_app.urls_for_include')),
-    path('test_api', db_api_view.as_view(), name='test_api')
+    path('test_api/', include(router.urls)),
+    path('test_api/del/<int:pk>', db_api_view_destroy.as_view()),
+    # path('test_api', db_api_view_viewset.as_view({'get': 'list'})),
+    # path('test_api/<int:pk>', db_api_view_viewset.as_view({'put': 'update'})),
 ]
